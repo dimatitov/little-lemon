@@ -1,0 +1,35 @@
+.root {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto 290px;
+  margin: 0 auto;
+  align-items: unset;
+  justify-content: unset;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  background-color: white;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+  width: 100%;
+}
+
+.main {
+  grid-area: main;
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}

@@ -1,0 +1,27 @@
+{
+  "defaultPath": "src",
+  "templateVars": {
+    "useTypeScript": true,
+    "fileNameStyle": "pascalCase"
+  },
+  "generators": {
+    "component": {
+      "path": "components/{{name}}",
+      "fileNameStyle": "pascalCase",
+      "files": {
+        "{{name}}.tsx": "templates/component/component.tsx",
+        "{{name}}.module.scss": "templates/component/style.scss",
+        "index.ts": "templates/component/index.ts"
+      }
+    },
+    "page": {
+      "path": "pages/{{name}}",
+      "fileNameStyle": "pascalCase",
+      "files": {
+        "{{name}}.tsx": "templates/page/page.tsx",
+        "index.ts": "templates/page/index.ts",
+        "{{name}}.module.scss": "templates/page/style.scss"
+      }
+    }
+  }
+}
