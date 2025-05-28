@@ -6,11 +6,7 @@ import { contacts, socials } from "./contstants";
 import { NAVIGATE } from "constants/navigate";
 import { Link } from "react-router-dom";
 
-export interface Props {
-  className?: string;
-}
-
-export const Footer: React.FC<Props> = ({ className }) => {
+export const Footer: React.FC = () => {
   return (
     <div className={styles.footer}>
       <img

@@ -8,7 +8,8 @@ export interface Error404Props {
 export const Error404: FC<Error404Props> = ({ className }) => {
   return (
     <div className={styles.root}>
-      Error404 page
+      <h1>404</h1>
+      <h2>Page not found</h2>
     </div>
   );
 };

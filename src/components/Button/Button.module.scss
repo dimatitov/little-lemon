@@ -1,0 +1,16 @@
+.root {
+  cursor: pointer;
+  display: flex;
+  background-color: #f4ce14;
+  border: 2px solid #f4ce14;
+  border-radius: 2rem;
+  color: #495e57;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+
+.root:hover,
+.root:focus {
+  border-color: #f4ce14;
+  background-color: #ebdfa4;
+}

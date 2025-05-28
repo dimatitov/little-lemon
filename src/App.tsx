@@ -32,7 +32,14 @@ function App() {
         );
       })}
 
-      <Route path="*" element={<Error404 />} />
+      <Route
+        path="*"
+        element={
+          <Layout>
+            <Error404 />
+          </Layout>
+        }
+      />
     </Routes>
   );
 }

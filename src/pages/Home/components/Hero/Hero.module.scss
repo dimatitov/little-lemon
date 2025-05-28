@@ -1,0 +1,65 @@
+.root {
+  padding-top: 1.875rem;
+  background-color: #495e57;
+}
+
+.root .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  margin: 0 auto;
+  max-width: 61.75rem;
+  width: 90%;
+}
+
+.heroInformation {
+  grid-column: 1;
+}
+
+.heroInformation h1 {
+  color: #f4ce14;
+  font-size: 2.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin-bottom: -10px;
+}
+
+.heroInformation h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  line-height: 2rem;
+}
+
+.heroInformation p {
+  margin-top: 1.5rem;
+  color: #ffffff;
+  font-size: 1.125rem;
+  margin-bottom: 40px;
+}
+
+.heroImage {
+  grid-column: 2;
+  width: 100%;
+  height: 24rem;
+  margin-bottom: -4.375rem;
+  justify-self: end;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+@media (max-width: 792px) {
+  .root .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .heroInformation {
+    grid-row: 1;
+  }
+
+  .heroImage {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
